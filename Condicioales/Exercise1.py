@@ -1,9 +1,11 @@
 def isOlder(currentYear, studentYear):
     currentAgeStudent = currentYear - studentYear
+    isOlderStudent = False
     if(currentAgeStudent >= 18):
-        return True
+        isOlderStudent = True
     else:
-        return False
+        isOlderStudent = False
+    return isOlderStudent
 
 def run():
     messageIsOlder = ''
@@ -14,7 +16,7 @@ def run():
         messageIsOlder = 'Eres Mayor'
     else:
         messageIsOlder = 'Eres Menor'
-    return print(messageIsOlder)
+    return messageIsOlder
 
 if __name__ == '__main__':
-    run()
+    print(run())
