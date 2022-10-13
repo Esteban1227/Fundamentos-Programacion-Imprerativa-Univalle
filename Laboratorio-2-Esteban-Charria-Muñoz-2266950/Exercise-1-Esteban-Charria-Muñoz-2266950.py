@@ -10,12 +10,11 @@
 #Funcion #1: calculateTMB
 
 # Definición de datos:
-# gender: valor numerico entero que contiene el identificador si es hombre o mujer (este es variado)
-# height: valor numerico decimal que contiene la altura del estudiante (este es variado)
-# weight: valor numerico decimal que contiene el peso del estudiante (este es variado)
-# age: valor enetero que contiene la edad del estudiante (este es variado)
-# TMB: valor decimal que contiene el TMB del estudiante (este es variado)
-
+# gender: valor numerico entero que contiene el identificador si es hombre o mujer
+# height: valor numerico decimal que contiene la altura del estudiante
+# weight: valor numerico decimal que contiene el peso del estudiante
+# age: valor enetero que contiene la edad del estudiante
+# TMB: valor decimal que contiene el TMB del estudiante
 # Firma y propósito:
 # Firma (entradas y salidas):
     # Entrada: gender, height, weight, age
@@ -41,20 +40,26 @@ def calculateTMB(gender, weight, height, age):
     return TMB
 
 # Probar el programa:
-#Prueba #1 Si el valor de gender = 1, el valor de height = 170, el valor de wight = 70, y el valor de age = 17 el valor de TMB es 1682.5
-#Prueba #2 Si el valor de gender = 2, el valor de height = 170, el valor de wight = 70, y el valor de age = 17 el valor de TMB es 1516.5
-#Prueba #3 Si el valor de gender = 1, el valor de height = 150, el valor de wight = 55, y el valor de age = 21 el valor de TMB es 1387.5
-#Prueba #4 Si el valor de gender = 2, el valor de height = 150, el valor de wight = 55, y el valor de age = 21 el valor de TMB es 1221.5
-#Prueba #5 Si el valor de gender = 1, el valor de height = 200, el valor de wight = 60, y el valor de age = 15 el valor de TMB es 1780.0
-#Prueba #6 Si el valor de gender = 2, el valor de height = 200, el valor de wight = 60, y el valor de age = 15 el valor de TMB es 1614.0
+#Prueba #1 ✅
+    # Si el valor de gender = 1, el valor de height = 170, el valor de wight = 70, y el valor de age = 17 el valor de TMB es 1682.5
+#Prueba #2 ✅ 
+    # Si el valor de gender = 2, el valor de height = 170, el valor de wight = 70, y el valor de age = 17 el valor de TMB es 1516.5
+#Prueba #3 ✅
+    # Si el valor de gender = 1, el valor de height = 150, el valor de wight = 55, y el valor de age = 21 el valor de TMB es 1387.5
+#Prueba #4 ✅
+    # Si el valor de gender = 2, el valor de height = 150, el valor de wight = 55, y el valor de age = 21 el valor de TMB es 1221.5
+#Prueba #5 ✅
+    # Si el valor de gender = 1, el valor de height = 200, el valor de wight = 60, y el valor de age = 15 el valor de TMB es 1780.0
+#Prueba #6 ✅
+    # Si el valor de gender = 2, el valor de height = 200, el valor de wight = 60, y el valor de age = 15 el valor de TMB es 1614.0
 
 
 #Funcion #2: courseAverageTMB
 
 # Definición de datos:
-# numberStudents: valor numerico entero que contiene la cantidad de estudiantes que hay en el curso (este es variado)
+# numberStudents: valor numerico entero que contiene la cantidad de estudiantes que hay en el curso
 # accumulatorTMB: valor decimal que contiene la acumulacion de todos los TMB de los estudiantes
-# totalAverage: valor decimal que contiene el promedio de totalTMB
+# totalAverage: valor decimal que contiene el promedio de accumulatorTMB
 
 # Firma y propósito:
 # Firma (entradas y salidas):
@@ -82,28 +87,34 @@ def courseAverageTMB(accumulatorTMB, numberStudents):
     return totalAverage
 
 # Probar el programa:
-#Prueba #1 Si el valor de accumulatorTMB = 1682.5 y numberStudents = 1 el prometio total es totalAverage = 1682.5
-#Prueba #2 Si el valor de accumulatorTMB = 3199 y numberStudents = 2 el prometio total es totalAverage = 1599,5
+#Prueba #1 ✅
+    # Si el valor de accumulatorTMB = 1682.5 y numberStudents = 1 el prometio total es totalAverage = 1682.5
+#Prueba #2 ✅ 
+    # Si el valor de accumulatorTMB = 3199 y numberStudents = 2 el prometio total es totalAverage = 1599,5
     # 1682.5 + 1516.5 = 3199 
-#Prueba #3 Si el valor de accumulatorTMB = 4586,5 y numberStudents = 3 el prometio total es totalAverage = 2293,25
+#Prueba #3 ✅ 
+    # Si el valor de accumulatorTMB = 4586,5 y numberStudents = 3 el prometio total es totalAverage = 2293,25
     # 1682.5 + 1516.5 + 1387.5 = 4586,5 
-#Prueba #4 Si el valor de accumulatorTMB = 5808 y numberStudents = 4 el prometio total es totalAverage = 1452
+#Prueba #4 ✅ 
+    # Si el valor de accumulatorTMB = 5808 y numberStudents = 4 el prometio total es totalAverage = 1452
     # 1682.5 + 1516.5 + 1387.5 + 1221.5 = 5808 
-#Prueba #5 Si el valor de accumulatorTMB = 7588 y numberStudents = 5 el prometio total es totalAverage = 1517,6
+#Prueba #5 ✅
+    # Si el valor de accumulatorTMB = 7588 y numberStudents = 5 el prometio total es totalAverage = 1517,6
     # 1682.5 + 1516.5 + 1387.5 + 1221.5 + 1780.0 = 7588 
-#Prueba #6 Si el valor de accumulatorTMB = 9202 y numberStudents = 6 el prometio total es totalAverage = 1533,6
+#Prueba #6 ✅ 
+    # Si el valor de accumulatorTMB = 9202 y numberStudents = 6 el prometio total es totalAverage = 1533,6
     # 1682.5 + 1516.5 + 1387.5 + 1221.5 + 1780.0 + 1614.0 = 9202
 
 #Funcion #3: run
 
 # Definición de datos:
-# numberStudents: valor numerico entero que contiene la cantidad de estudiantes que hay en el curso (este es variado)
-# asignatureName: Cadena de texto que contiene el nombre de la asignatura(este es variado)
+# numberStudents: valor numerico entero que contiene la cantidad de estudiantes que hay en el curso
+# asignatureName: Cadena de texto que contiene el nombre de la asignatura
 # accumulatorTMB: valor decimal que contiene el acumulado de todos los TMB de los estudiantes
-# studentGender: valor numerico entero que contiene el identificador si es hombre o mujer (este es variado)
-# studentHeight: valor numerico decimal que contiene la altura del estudiante (este es variado)
-# studentWeight: valor numerico decimal que contiene el peso del estudiante (este es variado)
-# studentAge: valor enetero que contiene la edad del estudiante (este es variado)
+# studentGender: valor numerico entero que contiene el identificador si es hombre o mujer
+# studentHeight: valor numerico decimal que contiene la altura del estudiante
+# studentWeight: valor numerico decimal que contiene el peso del estudiante
+# studentAge: valor enetero que contiene la edad del estudiante
 # percentageTMBTotal: valor decimal que contiene el promedio total del acumulado de todos los TMB de los estudiantes
 # messageResult: cadena alfanumerica que contiene este mensaje 'El promedio de tasa metabólica basal(TMB) de los estudiantes del curso en la asignatura ' + asignatureName + ' es de: ' + percentageTMBTotal
 # i : valor numerico entero que itera en el ciclo for
@@ -141,8 +152,7 @@ def courseAverageTMB(accumulatorTMB, numberStudents):
 #       studentGender = 1 studentHeight = 150, studentWeight = 55, studentAge = 21, 
 #   accumulatorTMB = 4586,5 
 #   percentageTMBTotal = 2293,25
-#   messageResult = 'El promedio de tasa metabólica basal(TMB) de los estudiantes del curso en la asignatura fisica es de: 2293,25'
-# Código del programa: 
+#   messageResult = 'El promedio de tasa metabólica basal(TMB) de los estudiantes del curso en la asignatura fisica es de: 2293,25' 
 #4
 #  Si numberStudents = 4, asignatureName = 'artes', 
 #   Estudiante #1
@@ -171,7 +181,6 @@ def courseAverageTMB(accumulatorTMB, numberStudents):
 #   accumulatorTMB = 7588
 #   percentageTMBTotal = 1517,6
 #   messageResult = 'El promedio de tasa metabólica basal(TMB) de los estudiantes del curso en la asignatura tecnologia es de: 1517,6'
-# Código del programa: 
 #6
 #  Si numberStudents = 6, asignatureName = 'etica', 
 #   Estudiante #1
@@ -189,6 +198,10 @@ def courseAverageTMB(accumulatorTMB, numberStudents):
 #   accumulatorTMB = 9202
 #   percentageTMBTotal = 1533,6
 #   messageResult = 'El promedio de tasa metabólica basal(TMB) de los estudiantes del curso en la asignatura etica es de: 1533,6'
+#7
+#  Si numberStudents = 0
+#   messageResult = 'Chao :)'
+
 # Código del programa: 
 
 def run():
@@ -222,4 +235,63 @@ def run():
 run()
 
 # Probar el programa:
-#Prueba #1 
+#Prueba #1 ✅
+#   si ingresamos los siguientes datos numberStudents = 1, asignatureName = 'matematica' 
+#   Estudiante #1
+#       studentGender = 1, studentHeight = 170, studentWeight = 70, studentAge = 17, 
+#   accumulatorTMB = 1682.5
+#   percentageTMBTotal = 1682.5
+#   messageResult = 'El promedio de tasa metabólica basal(TMB) de los estudiantes del curso en la asignatura matematica es de: 1682.5'
+
+#Prueba #2 ✅
+#   si ingresamos los siguientes datos numberStudents = 2, asignatureName = 'quimica', 
+#   Estudiante #1
+#       studentGender = 1 studentHeight = 170, studentWeight = 70, studentAge = 17, 
+#   Estudiante #2
+#       studentGender = 2 studentHeight = 170, studentWeight = 70, studentAge = 17, 
+#   accumulatorTMB = 3199
+#   percentageTMBTotal = 1599,5
+#   messageResult = 'El promedio de tasa metabólica basal(TMB) de los estudiantes del curso en la asignatura quimica es de: 1599,5'
+#Prueba #3 ✅
+#   si ingresamos los siguientes datos numberStudents = 3, asignatureName = 'fisica', 
+#   Estudiante #1
+#       studentGender = 1 studentHeight = 170, studentWeight = 70, studentAge = 17, 
+#   Estudiante #2
+#       studentGender = 2 studentHeight = 170, studentWeight = 70, studentAge = 17, 
+#   Estudiante #3
+#       studentGender = 1 studentHeight = 150, studentWeight = 55, studentAge = 21, 
+#   accumulatorTMB = 4586,5 
+#   percentageTMBTotal = 2293,25
+#   messageResult = 'El promedio de tasa metabólica basal(TMB) de los estudiantes del curso en la asignatura fisica es de: 2293,25' 
+#Prueba #4 ✅
+#   si ingresamos los siguientes datos numberStudents = 4, asignatureName = 'artes', 
+#   Estudiante #1
+#       studentGender = 1 studentHeight = 170, studentWeight = 70, studentAge = 17, 
+#   Estudiante #2
+#       studentGender = 2 studentHeight = 170, studentWeight = 70, studentAge = 17, 
+#   Estudiante #3
+#       studentGender = 1 studentHeight = 150, studentWeight = 55, studentAge = 21, 
+#   Estudiante #4
+#       studentGender = 2 studentHeight = 150, studentWeight = 55, studentAge = 21, 
+#   accumulatorTMB = 5808 
+#   percentageTMBTotal = 1452
+#   messageResult = 'El promedio de tasa metabólica basal(TMB) de los estudiantes del curso en la asignatura artes es de: 1452' 
+#Prueba #6 ✅
+#   si ingresamos los siguientes datos numberStudents = 5, asignatureName = 'tecnologia', 
+#   Estudiante #1
+#       studentGender = 1 studentHeight = 170, studentWeight = 70, studentAge = 17, 
+#   Estudiante #2
+#       studentGender = 2 studentHeight = 170, studentWeight = 70, studentAge = 17, 
+#   Estudiante #3
+#       studentGender = 1 studentHeight = 150, studentWeight = 55, studentAge = 21, 
+#   Estudiante #4
+#       studentGender = 2 studentHeight = 150, studentWeight = 55, studentAge = 21, 
+#   Estudiante #5
+#       studentGender = 1 studentHeight = 200, studentWeight = 60, studentAge = 15, 
+#   accumulatorTMB = 7588
+#   percentageTMBTotal = 1517,6
+#   messageResult = 'El promedio de tasa metabólica basal(TMB) de los estudiantes del curso en la asignatura tecnologia es de: 1517,6'
+#Prueba #7 ✅
+#   si ingresamos los siguientes datos  numberStudents = 0 
+#   messageResult = 'Chao :)'
+#  
